@@ -6,6 +6,8 @@ int main()
 
     Vector2 ballPosition = { 400.0f,300.0f };
     
+    SetTargetFPS(60);
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
@@ -22,5 +24,8 @@ int main()
 
         EndDrawing();
     }
+
+    CloseWindow();
+    
     return 0;
 }
